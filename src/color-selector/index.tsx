@@ -205,20 +205,20 @@ export const ColorSelector = (props: IColorSelectorProps) => {
         </div>
       )}
       <div className="recommend-color-container">
-        <div className="color-list-title">推荐颜色</div>
+        <div className="color-list-title">Recommended color</div>
         <div className="color-list-container">
           {renderColors(recommendedColors)}
         </div>
       </div>
       <div className="recent-use-container">
-        <div className="color-list-title">最近使用</div>
+        <div className="color-list-title">Recent use</div>
         <div className="color-list-container">{renderColors(recentColors)}</div>
       </div>
       {showPipetteColor && (
         <div className="pipette-color tool-row-container">
           <div className="tool-row-content" onClick={handlePickerColor}>
             <PipetteIcon className="tool-row-icon" />
-            <div>拾色器</div>
+            <div>Color picker</div>
           </div>
         </div>
       )}
@@ -226,7 +226,7 @@ export const ColorSelector = (props: IColorSelectorProps) => {
         <div className="more-color tool-row-container">
           <div className="tool-row-content">
             <PaletteIcon className="tool-row-icon" />
-            <div>更多颜色</div>
+            <div>More colors</div>
             <ArrowIcon className="tool-row-arrow" />
           </div>
           <div
